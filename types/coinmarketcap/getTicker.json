@@ -1,0 +1,35 @@
+{
+  "data": {
+      "id": 1765,
+      "name": "EOS",
+      "symbol": "EOS",
+      "website_slug": "eos",
+      "rank": 5,
+      "circulating_supply": 906245118.0,
+      "total_supply": 1006245120.0,
+      "max_supply": null,
+      "quotes": {
+          "USD": {
+              "price": 4.8560608258,
+              "volume_24h": 468307014.66891,
+              "market_cap": 4400781414.0,
+              "percent_change_1h": -3.98,
+              "percent_change_24h": -4.73,
+              "percent_change_7d": -27.01
+          },
+          "CAD": {
+              "price": 6.3942229484,
+              "volume_24h": 616643729.8723022,
+              "market_cap": 5794733328.0,
+              "percent_change_1h": -3.98,
+              "percent_change_24h": -4.73,
+              "percent_change_7d": -27.01
+          }
+      },
+      "last_updated": 1536429207
+  },
+  "metadata": {
+      "timestamp": 1536428674,
+      "error": null
+  }
+}

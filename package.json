@@ -1,0 +1,27 @@
+{
+  "name": "eos-receipt",
+  "version": "1.0.0",
+  "description": "EOS Receipt",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOS-Nation/eos-receipt.git"
+  },
+  "author": "Denis Carriere <denis@eosnation.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EOS-Nation/eos-receipt/issues"
+  },
+  "homepage": "https://github.com/EOS-Nation/eos-receipt#readme",
+  "devDependencies": {
+    "tslint": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "axios": "*"
+  }
+}
