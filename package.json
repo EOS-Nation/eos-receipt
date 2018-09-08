@@ -13,10 +13,6 @@
   },
   "author": "Denis Carriere <denis@eosnation.io>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EOS-Nation/eos-receipt/issues"
-  },
-  "homepage": "https://github.com/EOS-Nation/eos-receipt#readme",
   "devDependencies": {
     "tslint": "*",
     "typescript": "*"

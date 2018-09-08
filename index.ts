@@ -1,22 +1,10 @@
 import { getTickerPrice } from "./src/coinmarketcap";
 import { getTokenTransfer } from "./src/eosio";
 import { parseTokenString } from "./src/utils";
+import { Receipt } from "./types";
 export * from "./src/coinmarketcap";
 export * from "./src/eosio";
-
-export interface Receipt {
-  block_num: number;
-  block_time: string;
-  from: string;
-  to: string;
-  quantity: string;
-  memo: string;
-  amount: number;
-  symbol: string;
-  price: number;
-  currency: string;
-  value: number;
-}
+export * from "./types";
 
 /**
  * Get Receipt
