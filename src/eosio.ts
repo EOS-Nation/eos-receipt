@@ -1,6 +1,6 @@
 import axios from "axios";
-import * as config from "./config";
 import { EosioTokenData, GetTransaction } from "../types";
+import * as config from "./config";
 
 /**
  * Get Transaction
@@ -36,8 +36,8 @@ export async function getTokenTransfer(trx_id: string) {
     return {
       block_num,
       block_time,
-      data
-    }
+      data,
+    };
   }
   return null;
 }

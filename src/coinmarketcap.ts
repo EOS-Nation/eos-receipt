@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GetTicker } from "../types/coinmarketcap/getTicker"
+import { GetTicker } from "../types/coinmarketcap/getTicker";
 
 /**
  * Get Ticker
@@ -17,7 +17,7 @@ export async function getTicker(options: {
 } = {}) {
   const ticker = options.ticker || 1765;
   let url = `https://api.coinmarketcap.com/v2/ticker/${ticker}/?`;
-  if (options.convert) url += `convert=${options.convert}`;
+  if (options.convert) { url += `convert=${options.convert}`; }
   const {data} = await axios.get<GetTicker>(url);
   return data;
 }
@@ -26,8 +26,8 @@ export async function getTicker(options: {
  * Ticker Table
  */
 export const tickerTable: {[symbol: string]: number} = {
-  EOS: 1765
-}
+  EOS: 1765,
+};
 
 /**
  * Get Ticker Price
@@ -41,7 +41,7 @@ export const tickerTable: {[symbol: string]: number} = {
  */
 export async function getTickerPrice(symbol = "EOS", convert = "USD") {
   const ticker = tickerTable[symbol];
-  if (!ticker) throw new Error("symbol not found");
+  if (!ticker) { throw new Error("symbol not found"); }
   const value = await getTicker({ticker, convert});
   return value.data.quotes[convert].price;
 }
