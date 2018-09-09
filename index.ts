@@ -15,8 +15,10 @@ export * from "./types";
  *
  * const receipt = await getReceipt("b7bf...649f");
  */
-export default async function getReceipt(id: string, currency = "USD"): Promise<Receipt | null> {
-  const transfer = await getTokenTransfer(id);
+export default async function getReceipt(id: string, currency = "USD", options: {
+  api?: string,
+} = {}): Promise<Receipt | null> {
+  const transfer = await getTokenTransfer(id, options);
   if (transfer) {
     const { block_num, block_time } = transfer;
     const { from, to, quantity, memo } = transfer.data;

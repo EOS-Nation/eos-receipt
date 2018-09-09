@@ -1,1 +1,1 @@
-export const EOSIO_API = "https://api.eosn.io";
+export const EOSIO_API = "https://api.greymass.com";
