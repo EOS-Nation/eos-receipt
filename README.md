@@ -6,6 +6,10 @@
 
 [EOSReceipt.io](https://eosreceipt.io) is where you can generate receipts for your EOS based crypto purchases.
 
+> A collaboration of [EOS Tribe](https://eostribe.io) + [EOS Nation](https://www.eosnation.io) at the [2018 Wyoming Hackathon](https://wyominghackathon.devpost.com).
+
+![image](https://user-images.githubusercontent.com/550895/45269259-194e3180-b448-11e8-8f00-ba8c08ad323b.png)
+
 ## Install
 
 **npm**
