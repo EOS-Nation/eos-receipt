@@ -1,9 +1,11 @@
 /**
  * Parse Token String
  *
+ * @private
  * @param {string} tokenString Token String (eg: "10.0 EOS")
  * @returns {object} Amount & Symbol
  * @example
+ *
  * parseTokenString("10.0 EOS") //=> {amount: 10.0, symbol: "EOS"}
  */
 export function parseTokenString(tokenString: string) {
@@ -14,9 +16,12 @@ export function parseTokenString(tokenString: string) {
 
 /**
  * Parse string to JSON
+ *
+ * @private
  * @param {string} str String
  * @returns {object} JSON
  * @example
+ *
  * parseJSON("{foo: 'bar'}") //=> {foo: "bar"}
  */
 export function parseJSON(str: string | undefined): object {

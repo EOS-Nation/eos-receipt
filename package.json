@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "tslint --project .",
-    "prepare": "tsc"
+    "prepare": "tsc",
+    "docs": "tsc && documentation readme index.js --section=API"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "author": "Denis Carriere <denis@eosnation.io>",
   "license": "MIT",
   "devDependencies": {
+    "documentation": "*",
     "tslint": "*",
     "typescript": "*"
   },

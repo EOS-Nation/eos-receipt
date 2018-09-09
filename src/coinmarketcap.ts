@@ -9,6 +9,10 @@ import { GetTicker } from "../types/coinmarketcap/getTicker";
  * @param [options.structure="dictionary"] Specify the structure for the main data field.
  * Possible values are dictionary and array (default is dictionary).
  * @param [options.convert] return pricing info in terms of another currency.
+ * @returns {Promise<GetTicker>} Coinmarketcap GetTicker
+ * @example
+ *
+ * const ticker = await getTicker({ticker: 1765});
  */
 export async function getTicker(options: {
   ticker?: number
@@ -34,6 +38,7 @@ export const tickerTable: {[symbol: string]: number} = {
  *
  * @param [symbol="EOS"] Ticker Symbol
  * @param [convert="USD"] Type of Currency
+ * @returns {Promise<number>} Price of Ticker
  * @example
  *
  * const currency = await getTickerPrice("EOS", "USD");
@@ -45,8 +50,3 @@ export async function getTickerPrice(symbol = "EOS", convert = "USD") {
   const value = await getTicker({ticker, convert});
   return value.data.quotes[convert].price;
 }
-
-// (async () => {
-//   const price = await getTickerPrice("EOS", "CAD")
-//   console.log(price);
-// })()

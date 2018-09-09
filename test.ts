@@ -1,6 +1,12 @@
-import eosReceipt from ".";
+import eosReceipt, {getTickerPrice, getTransaction} from ".";
 
 (async () => {
-  const receipt = await eosReceipt("b7bf6f77fb8749652d8fd23eb10e5173e3eb4914ea91e81488f76f914a96649f", "CAD");
+  const receipt = await eosReceipt("31e684605dadf43894ef1bde2f59a5995dabf3e249ddf6f691a44f6641403566");
   console.log(receipt);
+
+  const price = await getTickerPrice("EOS", "CAD");
+  console.log(price);
+
+  const transaction = getTransaction("31e684605dadf43894ef1bde2f59a5995dabf3e249ddf6f691a44f6641403566");
+  console.log(transaction);
 })();

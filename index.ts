@@ -9,8 +9,11 @@ export * from "./types";
 /**
  * Get Receipt
  *
- * @param id EOSIO Transaction ID
- * @param currency Currency
+ * @param {string} id EOSIO Transaction ID
+ * @param {string} [currency="USD"] FIAT Currency
+ * @param {object} [options={}] Optional Parameters
+ * @param {string} [options.api] EOSIO API
+ * @returns {Promise<Receipt | null>} Receipt JSON
  * @example
  *
  * const receipt = await getReceipt("b7bf...649f");

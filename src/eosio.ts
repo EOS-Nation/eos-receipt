@@ -4,6 +4,14 @@ import { axiosConfig, EOSIO_API } from "./config";
 
 /**
  * Get Transaction
+ *
+ * @param {string} id Transaction ID
+ * @param {object} [options={}] Optional Parameters
+ * @param {string} [options.api] EOSIO API
+ * @returns {Promise<GetTransaction>} EOSIO Transaction
+ * @example
+ *
+ * const transaction = await getTransaction("b7bf...649f");
  */
 export async function getTransaction<T = unknown>(id: string, options: {
   api?: string,
@@ -18,7 +26,9 @@ export async function getTransaction<T = unknown>(id: string, options: {
  * Get Token Transfer
  *
  * @param trx_id Transaction ID
- *
+ * @param {object} [options={}] Optional Parameters
+ * @param {string} [options.api] EOSIO API
+ * @returns {Promise<EosioTokenData>} EOSIO Token Data
  * @example
  *
  * const tokenTransfer = await getTokenTransfer("b7bf...649f");
