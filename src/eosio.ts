@@ -1,6 +1,6 @@
 import axios from "axios";
 import { EosioTokenData, GetTransaction } from "../types";
-import { EOSIO_API} from "./config";
+import { axiosConfig, EOSIO_API } from "./config";
 
 /**
  * Get Transaction
@@ -10,7 +10,7 @@ export async function getTransaction<T = unknown>(id: string, options: {
 } = {}): Promise<GetTransaction<T>> {
   const api = options.api || EOSIO_API;
   const url = api + "/v1/history/get_transaction";
-  const {data} = await axios.post<GetTransaction<T>>(url, {id});
+  const {data} = await axios.post<GetTransaction<T>>(url, {id}, axiosConfig);
   return data;
 }
 
