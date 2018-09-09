@@ -1,11 +1,18 @@
 {
   "name": "eos-receipt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EOS Receipt",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src",
+    "types"
+  ],
   "scripts": {
-    "test": "tslint --project ."
+    "test": "tslint --project .",
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
