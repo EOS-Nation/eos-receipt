@@ -1,5 +1,5 @@
+import fetch from "cross-fetch";
 import { JsonRpc, RpcError } from "eosjs";
-import fetch from "node-fetch";
 import { EosioTokenData, GetTransaction } from "./types";
 import { Receipt } from "./types";
 import { GetTicker } from "./types/coinmarketcap/getTicker";
