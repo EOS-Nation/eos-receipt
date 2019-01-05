@@ -1,13 +1,12 @@
 {
   "name": "eos-receipt",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "EOS Receipt",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
     "index.js",
     "index.d.ts",
-    "src",
     "types"
   ],
   "scripts": {
@@ -22,11 +21,16 @@
   "author": "Denis Carriere <denis@eosnation.io>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "*",
+    "@types/node-fetch": "*",
+    "@types/text-encoding": "*",
     "documentation": "*",
     "tslint": "*",
     "typescript": "*"
   },
   "dependencies": {
-    "axios": "*"
+    "axios": "*",
+    "eosjs": "^20.0.0-beta3",
+    "node-fetch": "*"
   }
 }

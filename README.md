@@ -49,8 +49,8 @@ import eosReceipt from "eos-receipt";
 
 ## Related
 
-- [eos-receipt](https://github.com/eos-nation/eos-receipt) Javascript Library API
-- [eos-receipt-UI](https://github.com/EOSTribe/eos-receipt-UI) React UI Front-end
+-   [eos-receipt](https://github.com/eos-nation/eos-receipt) Javascript Library API
+-   [eos-receipt-UI](https://github.com/EOSTribe/eos-receipt-UI) React UI Front-end
 
 ## API
 
@@ -84,7 +84,7 @@ Get Receipt
 -   `id` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** EOSIO Transaction ID
 -   `currency` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** FIAT Currency (optional, default `"USD"`)
 -   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Optional Parameters (optional, default `{}`)
-    -   `options.api` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** EOSIO API
+    -   `options.endpoint` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** EOSIO endpoint API
 
 #### Examples
 
@@ -144,7 +144,7 @@ Get Transaction
 
 -   `id` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Transaction ID
 -   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Optional Parameters (optional, default `{}`)
-    -   `options.api` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** EOSIO API
+    -   `options.endpoint` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** EOSIO endpoint API
 
 #### Examples
 

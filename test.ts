@@ -7,6 +7,6 @@ import eosReceipt, {getTickerPrice, getTransaction} from ".";
   const price = await getTickerPrice("EOS", "CAD");
   console.log(price);
 
-  const transaction = getTransaction("31e684605dadf43894ef1bde2f59a5995dabf3e249ddf6f691a44f6641403566");
+  const transaction = await getTransaction("31e684605dadf43894ef1bde2f59a5995dabf3e249ddf6f691a44f6641403566");
   console.log(transaction);
 })();
